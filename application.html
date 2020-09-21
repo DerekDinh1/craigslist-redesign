@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Craigslist Redesign</title>
+
+    <link rel="stylesheet" href="stylesheet/application.css" type="text/css">
+    <script src="scripts/index.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!--title and title section-->
+      <div class="title-section title">craigslist</div>
+
+      <!--search section-->
+      <div class="search-section">
+        <div class="input-field">
+          <i class="material-icons prefix fas fa-search"></i>
+          <input id="last_name" type="text">
+          <label for="last_name">search craigslist</label>
+        </div>
+      </div>
+
+      <!--account section-->
+      <div class="account-section">
+        <!--profile section and profile image-->
+        <div class="profile-section">
+          <img class="img-circle" src="https://images.unsplash.com/photo-1534375971785-5c1826f739d8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=judeus-samson-tI6m-AXpAsg-unsplash.jpg">
+        </div>
+      </div>
+
+      <!--location section-->
+      <div class="location-section">
+        <div class="input-field">
+          <i class="material-icons prefix fas fa-location-arrow"></i>
+          <input id="icon_prefix" type="text" value="Denver, CO">
+          <label for="icon_prefix">Location</label>
+        </div>
+      </div>
+
+      <!--calendar section-->
+      <div class="box-page calendar-section">
+        <div class="calendar-div">
+          <table class="calendar">
+            <caption class="calendar__banner--month">
+              <h1>March</h1>
+            </caption>
+            <thead>
+            <tr>
+              <th class="calendar__day__header">S</th>
+              <th class="calendar__day__header">M</th>
+              <th class="calendar__day__header">T</th>
+              <th class="calendar__day__header">W</th>
+              <th class="calendar__day__header">Th</th>
+              <th class="calendar__day__header">F</th>
+              <th class="calendar__day__header">Sa</th>
+            </tr>
+            </thead>
+            <body>
+            <tr>
+              <td class="calendar__day__cell"></td>
+              <td class="calendar__day__cell"></td>
+              <td class="calendar__day__cell"></td>
+              <td class="calendar__day__cell">1</td>
+              <td class="calendar__day__cell">2</td>
+              <td class="calendar__day__cell">3</td>
+              <td class="calendar__day__cell">4</td>
+            </tr>
+            <tr>
+              <td class="calendar__day__cell">5</td>
+              <td class="calendar__day__cell">6</td>
+              <td class="calendar__day__cell">7</td>
+              <td class="calendar__day__cell">8</td>
+              <td class="calendar__day__cell">9</td>
+              <td class="calendar__day__cell">10</td>
+              <td class="calendar__day__cell">11</td>
+            </tr>
+            <tr>
+              <td class="calendar__day__cell">12</td>
+              <td class="calendar__day__cell">13</td>
+              <td class="calendar__day__cell">14</td>
+              <td class="calendar__day__cell">15</td>
+              <td class="calendar__day__cell">16</td>
+              <td class="calendar__day__cell">17</td>
+              <td class="calendar__day__cell">18</td>
+            </tr>
+            <tr>
+              <td class="calendar__day__cell">19</td>
+              <td class="calendar__day__cell">20</td>
+              <td class="calendar__day__cell">21</td>
+              <td class="calendar__day__cell">22</td>
+              <td class="calendar__day__cell">23</td>
+              <td class="calendar__day__cell">24</td>
+              <td class="calendar__day__cell">25</td>
+            </tr>
+            <tr>
+              <td class="calendar__day__cell">26</td>
+              <td class="calendar__day__cell">27</td>
+              <td class="calendar__day__cell">28</td>
+              <td class="calendar__day__cell">29</td>
+              <td class="calendar__day__cell">30</td>
+              <td class="calendar__day__cell">31</td>
+              <td class="calendar__day__cell"></td>
+            </tr>
+            </body>
+          </table>
+        </div>
+      </div>
+
+      <!--about section-->
+      <div class="box-page about-section">
+        <ul class="full-list">
+          <li><a href="pages/about.html">about craigslist</a></li>
+          <li>help, faq, abuse, legal</li>
+          <li>avoid scams & fraud</li>
+          <li>personal safety tips</li>
+          <li>terms of use</li>
+          <li>privacy policy</li>
+          <li>system status</li>
+          <br>
+          <br>
+          <li>craigslist is hiring in sf</li>
+          <li>craigslist open source</li>
+          <li>craigslist blog</li>
+          <li>best-of-craigslist</li>
+          <li>craigslist TV</li>
+          <li>"craigslist joe"</li>
+          <li>craig connects</li>
+        </ul>
+      </div>
+
+      <!--beginning of content list-->
+      <!--community section-->
+      <div class="box-page community-section">
+        <p><i class="fas fa-cogs icons"></i><a href="pages/community.html">Community</a></p>
+        <ul class="float-list">
+          <li>activities</li>
+          <li>artists</li>
+          <li>childcare</li>
+          <li>classes</li>
+          <li>events</li>
+          <li>general</li>
+          <li>groups</li>
+        </ul>
+
+        <ul class="float-list">
+          <li>local news</li>
+          <li>lost+found</li>
+          <li>musicians</li>
+          <li>pets</li>
+          <li>politics</li>
+          <li>rideshare</li>
+          <li>volunteers</li>
+        </ul>
+      </div>
+
+      <!--housing section-->
+      <div class="box-page housing-section">
+        <p><i class="fas fa-home icons"></i><a>Housing</a></p>
+        <ul class="full-list">
+          <li>apts / housing</li>
+          <li>housing swap</li>
+          <li>housing wanted</li>
+          <li>office / commercial</li>
+          <li>parking / storage</li>
+          <li>real estate for sale</li>
+          <li>rooms wanted</li>
+          <li>sublets / temporary</li>
+          <li>vacation rentals</li>
+        </ul>
+      </div>
+
+      <!--for sale section-->
+      <div class="box-page sale-section">
+        <p><i class="fas fa-balance-scale icons"></i><a>For Sale</a></p>
+        <ul class="float-list">
+          <li>antiques</li>
+          <li>appliances</li>
+          <li>arts+crafts</li>
+          <li>atv/utv/sno</li>
+          <li>auto parts</li>
+          <li>baby+kid</li>
+          <li>barter</li>
+          <li>beauty+hlth</li>
+          <li>bikes</li>
+          <li>boats</li>
+          <li>books</li>
+          <li>business</li>
+          <li>cars+trucks</li>
+          <li>cds/dvd/vhs</li>
+          <li>cell phones</li>
+          <li>clothes+acc</li>
+          <li>collectibles</li>
+          <li>computers</li>
+          <li>electronics</li>
+          <li>farm+garden</li>
+        </ul>
+        <ul class="float-list">
+          <li>free</li>
+          <li>furniture</li>
+          <li>garage sale</li>
+          <li>general</li>
+          <li>heavy equip</li>
+          <li>household</li>
+          <li>jewelry</li>
+          <li>materials</li>
+          <li>motorcycles</li>
+          <li>music instr</li>
+          <li>photo+video</li>
+          <li>rvs+camp</li>
+          <li>sporting</li>
+          <li>tickets</li>
+          <li>tools</li>
+          <li>toys+games</li>
+          <li>trailers</li>
+          <li>video gaming</li>
+          <li>wanted</li>
+          <li>services</li>
+        </ul>
+      </div>
+
+      <!--housing section-->
+      <div class="box-page services-section">
+        <p><i class="fas fa-link icons"></i><a>Services</a></p>
+        <ul class="float-list">
+          <li>automotive</li>
+          <li>beauty</li>
+          <li>cell/mobile</li>
+          <li>computer</li>
+          <li>creative</li>
+          <li>cycle</li>
+          <li>event</li>
+          <li>farm+garden</li>
+          <li>financial</li>
+          <li>household</li>
+          <li>labor/move</li>
+        </ul>
+        <ul class="float-list">
+          <li>legal</li>
+          <li>lessons</li>
+          <li>marine</li>
+          <li>pet</li>
+          <li>real estate</li>
+          <li>skilled trade</li>
+          <li>sm biz ads</li>
+          <li>therapeutic</li>
+          <li>travel/vac</li>
+          <li>write/ed/tran</li>
+        </ul>
+      </div>
+
+      <!--gigs section-->
+      <div class="box-page gigs-section">
+        <p><i class="fas fa-asterisk icons"></i><a>Gigs</a></p>
+        <ul class="float-list">
+          <li>automotive</li>
+          <li>beauty</li>
+          <li>cell/mobile</li>
+          <li>computer</li>
+          <li>creative</li>
+          <li>cycle</li>
+          <li>event</li>
+          <li>farm+garden</li>
+          <li>financial</li>
+          <li>household</li>
+          <li>labor/move</li>
+        </ul>
+        <ul class="float-list">
+          <li>legal</li>
+          <li>lessons</li>
+          <li>marine</li>
+          <li>pet</li>
+          <li>real estate</li>
+          <li>skilled trade</li>
+          <li>sm biz ads</li>
+          <li>therapeutic</li>
+          <li>travel/vac</li>
+          <li>write/ed/tran</li>
+        </ul>
+      </div>
+
+      <!--jobs section-->
+      <div class="box-page jobs-section">
+        <p><i class="fas fa-briefcase icons"></i><a>Jobs</a></p>
+        <ul class="full-list">
+          <li>accounting+finance</li>
+          <li>admin / office</li>
+          <li>arch / engineering</li>
+          <li>art / media / design</li>
+          <li>biotech / science</li>
+          <li>business / mgmt</li>
+          <li>customer service</li>
+          <li>education</li>
+          <li>food / bev / hosp</li>
+          <li>general labor</li>
+          <li>government</li>
+          <li>human resources</li>
+          <li>internet engineers</li>
+          <li>legal / paralegal</li>
+          <li>manufacturing</li>
+          <li>marketing / pr / ad</li>
+          <li>medical / health</li>
+          <li>nonprofit sector</li>
+          <li>real estate</li>
+          <li>retail / wholesale</li>
+          <li>sales / biz dev</li>
+          <li>salon / spa / fitness</li>
+          <li>security</li>
+          <li>skilled trade / craft</li>
+          <li>software / qa / dba</li>
+          <li>systems / network</li>
+          <li>technical support</li>
+          <li>transport</li>
+          <li>tv / film / video</li>
+          <li>web / info design</li>
+          <li>writing / editing</li>
+        </ul>
+      </div>
+
+      <!--nearby section-->
+      <div class="box-page nearby-section">
+        <p><i class="fas fa-map-marker icons"></i><a>Nearby</a></p>
+        <ul class="full-list">
+          <li>allentown</li>
+          <li>altoona</li>
+          <li>annapolis</li>
+          <li>baltimore</li>
+          <li>central nj</li>
+          <li>charlottesville</li>
+          <li>cumberland val</li>
+          <li>delaware</li>
+          <li>eastern shore</li>
+          <li>eastern wv</li>
+          <li>frederick</li>
+          <li>fredericksburg</li>
+          <li>harrisburg</li>
+          <li>harrisonburg</li>
+          <li>jersey shore</li>
+          <li>lancaster</li>
+          <li>lynchburg</li>
+          <li>morgantown</li>
+          <li>norfolk</li>
+          <li>philadelphia</li>
+          <li>poconos</li>
+          <li>reading</li>
+          <li>richmond</li>
+          <li>southern md</li>
+          <li>south jersey</li>
+          <li>state college</li>
+          <li>western md</li>
+          <li>williamsport</li>
+          <li>winchester</li>
+          <li>york</li>
+          <li>us cities</li>
+          <li>us states</li>
+          <li>canada</li>
+          <li>cl worldwide</li>
+        </ul>
+      </div>
+
+      <!--personals section-->
+      <div class="box-page personals-section">
+        <p><i class="fas fa-users icons"></i><a>Personals</a></p>
+        <ul class="full-list">
+          <li>strictly platonic</li>
+          <li>women seek women</li>
+          <li>women seeking men</li>
+          <li>men seeking women</li>
+          <li>men seeking men</li>
+          <li>misc romance</li>
+          <li>casual encounters</li>
+          <li>missed connections</li>
+          <li>rants and raves</li>
+        </ul>
+      </div>
+
+      <!--discussion section-->
+      <div class="box-page discussion-section">
+        <p><i class="fas fa-comments icons"></i><a>Discussion Forums</a></p>
+        <ul class="trip-float-list">
+          <li>apple</li>
+          <li>arts</li>
+          <li>atheist</li>
+          <li>autos</li>
+          <li>beauty</li>
+          <li>bikes</li>
+          <li>celebs</li>
+          <li>comp</li>
+          <li>crafts</li>
+          <li>diet</li>
+          <li>divorce</li>
+          <li>dying</li>
+          <li>eco</li>
+          <li>educ</li>
+          <li>feedbk</li>
+          <li>film</li>
+          <li>fitness</li>
+          <li>fixit</li>
+          <li>food</li>
+          <li>frugal</li>
+          <li>gaming</li>
+          <li>garden</li>
+          <li>haiku</li>
+        </ul>
+        <ul class="trip-float-list">
+          <li>help</li>
+          <li>history</li>
+          <li>housing</li>
+          <li>jobs</li>
+          <li>jokes</li>
+          <li>kink</li>
+          <li>legal</li>
+          <li>linux</li>
+          <li>m4m</li>
+          <li>manners</li>
+          <li>marriage</li>
+          <li>media</li>
+          <li>money</li>
+          <li>motocy</li>
+          <li>music</li>
+          <li>nonprofit</li>
+          <li>open</li>
+          <li>outdoor</li>
+          <li>over 50</li>
+          <li>parent</li>
+          <li>pets</li>
+          <li>philos</li>
+        </ul>
+        <ul class="trip-float-list">
+          <li>photo</li>
+          <li>p.o.c.</li>
+          <li>politics</li>
+          <li>psych</li>
+          <li>queer</li>
+          <li>recover</li>
+          <li>religion</li>
+          <li>romance</li>
+          <li>science</li>
+          <li>spirit</li>
+          <li>sports</li>
+          <li>tax</li>
+          <li>travel</li>
+          <li>tv</li>
+          <li>vegan</li>
+          <li>w4w</li>
+          <li>wed</li>
+          <li>wine</li>
+          <li>women</li>
+          <li>words</li>
+          <li>writing</li>
+          <li>yoga</li>
+        </ul>
+      </div>
+    </div>
+
+    <!--start of footer-->
+    <div class="footer">
+      <div>
+        <!--footer options-->
+        <span>© craigslist</span>
+        <span>help</span>
+        <span>safety</span>
+        <span>privacy</span>
+        <span>feedback</span>
+        <span>cl</span>
+        <span>jobs</span>
+        <span>terms</span>
+        <span>about</span>
+        <span>mobile</span>
+
+        <!--language input section-->
+        <div class="language-section input-field">
+          <select>
+            <option value="0" selected>english</option>
+            <option value="1">afrikaans</option>
+            <option value="2">dansk</option>
+            <option value="3">deutsch</option>
+            <option value="4">español</option>
+            <option value="5">français</option>
+            <option value="6">italiano</option>
+            <option value="7">nederlands</option>
+            <option value="8">norsk</option>
+            <option value="9">português</option>
+            <option value="10">suomi</option>
+            <option value="11">svenska</option>
+            <option value="12">tiếng việt</option>
+            <option value="13">türkçe</option>
+            <option value="14">русский</option>
+            <option value="15">中文</option>
+            <option value="16">日本語</option>
+            <option value="17">한국말</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
