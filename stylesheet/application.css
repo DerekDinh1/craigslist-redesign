@@ -80,18 +80,18 @@ body {
 }
 
 /*Start of content section*/
-.calendar-section {
-    background: #eeeeee;
-    grid-column: col;
-    grid-row: row 3;
-}
-
 .about-section {
     background: #eeeeee;
     color: black;
     grid-column: col;
     grid-row: row 4;
     text-align: center;
+}
+
+.calendar-section {
+    background: #eeeeee;
+    grid-column: col;
+    grid-row: row 3;
 }
 
 .community-section {
@@ -125,7 +125,7 @@ body {
 }
 
 .nearby-section {
-    background: white;
+    background: #eeeeee;
     grid-column: col 5;
     grid-row: row 3 / span 4;
 }
