@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Craigslist Redesign</title>
+
+    <link rel="stylesheet" href="stylesheets/sales.scss" type="text/css">
+    <script src="scripts/index.js"></script>
+  </head>
+
+  <body>
+    <nav class="app--nav state--loaded">
+      
+      <!--Logo-->
+      <a href="#" class="app--logo">craigslist</a>
+      
+      <!--Side nav filters-->
+      <div class="rslt__fltr">  
+
+        <!--area filter-->
+        <div class="rslt__fltr ui-nav-menu" js-ui-menu>
+          <button class="ui-nav-menu-trgr" js-ui-menu-trigger>
+            <i class="btn__seg ion ion-ios-location"></i><span class="btn__seg btn__seg--txt">sf bay area</span><i class="btn__seg ion ion-ios-arrow-down menu-arrow"></i>
+          </button>
+          
+          <ul class="ui-nav-menu-opts"><!--empty--></ul>
+        </div>
+        
+        <!--sale filter-->
+        <div class="rslt__fltr ui-nav-menu state--expanded" js-ui-menu>
+          <button class="ui-nav-menu-trgr" js-ui-menu-trigger>
+            <i class="btn__seg ion ion-pricetag"></i><span class="btn__seg btn__seg--txt">for sale</span><i class="btn__seg ion ion-ios-arrow-down menu-arrow"></i>
+          </button>
+          
+          <ul class="ui-nav-menu-opts">
+            <li class="menu__fltr fltr-type__row">
+              <input type="checkbox" name="sale" value="cars & trucks" />
+              <span class="menu__fltr__lbl">Cars & Trucks</span>
+              <span class="menu__fltr__cntr cntr-clr--1">163</span>
+            </li>        
+            <li class="menu__fltr fltr-type__row">
+              <input type="checkbox" name="sale" value="auto parts" />
+              <span class="menu__fltr__lbl">Auto Parts</span>
+              <span class="menu__fltr__cntr cntr-clr--2">52</span>
+            </li>
+            <li class="menu__fltr fltr-type__row">
+              <input type="checkbox" name="sale" value="wanted" />
+              <span class="menu__fltr__lbl">Wanted</span>
+              <span class="menu__fltr__cntr cntr-clr--3">29</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!--sold by filter-->
+        <div class="rslt__fltr ui-nav-menu state--expanded">
+          <button class="ui-nav-menu-trgr">
+            <i class="btn__seg ion ion-person"></i><span class="btn__seg btn__seg--txt">Sold by</span>
+          </button>
+          
+          <ul class="ui-nav-menu-opts">
+            <li class="menu__fltr fltr-type__row">
+              <span class="menu__fltr__lgnd lgnd-clr--1"></span>
+              <span class="menu__fltr__lbl">Owner</span>
+            </li>
+            <li class="menu__fltr fltr-type__row">
+              <span class="menu__fltr__lgnd lgnd-clr--2"></span>
+              <span class="menu__fltr__lbl">Dealer</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!--price filter-->
+        <div class="rslt__fltr ui-nav-menu state--expanded">
+          <button class="ui-nav-menu-trgr">
+            <i class="btn__seg ion ion-card"></i><span class="btn__seg btn__seg--txt">price</span>
+          </button>
+          <ul class="ui-nav-menu-opts">
+            <li class="menu__fltr fltr-type__sldr">
+              <div js-price-slider></div>
+            </li>
+            <li class="menu__fltr fltr-type__sldr"></li>
+          </ul>
+        </div>
+        
+        <!--year filter-->
+        <div class="rslt__fltr ui-nav-menu state--expanded">
+          <button class="ui-nav-menu-trgr">
+            <i class="btn__seg ion ion-calendar"></i><span class="btn__seg btn__seg--txt">year</span>
+          </button>
+          <ul class="ui-nav-menu-opts">
+            <li class="menu__fltr fltr-type__rang">
+              <label class="ui-dd">
+                <select name="min-range-year" id="">
+                  <option value="">min</option>
+                  <option value="2014">2014</option>
+                  <option value="2013">2013</option>
+                  <option value="2012">2012</option>
+                </select>
+                <i class="ion ion-ios-arrow-down"></i>
+              </label>
+              <span class="rang-brdg">to</span>
+              <label class="ui-dd">
+                <select name="max-range-year" id="">
+                  <option value="">max</option>
+                  <option value="2014">2014</option>
+                  <option value="2013">2013</option>
+                  <option value="2012">2012</option>
+                </select>
+                <i class="ion ion-ios-arrow-down"></i>
+              </label>
+            </li>
+          </ul>
+        </div>
+        
+        <!--paint filter-->
+        <div class="rslt__fltr ui-nav-menu state--expanded">
+          <button class="ui-nav-menu-trgr">
+            <i class="btn__seg ion ion-paintbucket"></i><span class="btn__seg btn__seg--txt">paint</span>
+          </button>
+          <ul class="ui-nav-menu-opts">
+            <li class="menu__fltr fltr-type__clr">
+              <span class="menu__fltr__clr fltr__clr--white"></span>
+              <span class="menu__fltr__clr fltr__clr--black"></span>
+              <span class="menu__fltr__clr fltr__clr--orange"></span>
+              <span class="menu__fltr__clr fltr__clr--red"></span>
+              <span class="menu__fltr__clr fltr__clr--teal"></span>
+              <span class="menu__fltr__clr fltr__clr--grey"></span>
+              <span class="menu__fltr__clr fltr__clr--yellow"></span>
+            </li>
+          </ul>
+        </div>
+        
+        <!--odometer filter-->
+        <div class="rslt__fltr ui-nav-menu state--expanded">
+          <button class="ui-nav-menu-trgr">
+            <i class="btn__seg ion ion-ios-plus-outline"></i><span class="btn__seg btn__seg--txt">odometer</span>
+          </button>
+          <ul class="ui-nav-menu-opts"><!--empty--></ul>
+        </div>
+        
+        <!--fuel filter-->
+        <div class="rslt__fltr ui-nav-menu state--expanded">
+          <button class="ui-nav-menu-trgr">
+            <i class="btn__seg ion ion-ios-plus-outline"></i><span class="btn__seg btn__seg--txt">fuel</span>
+          </button>
+          <ul class="ui-nav-menu-opts"><!--empty--></ul>
+        </div>
+
+        <!--transmission filter-->
+        <div class="rslt__fltr ui-nav-menu state--expanded">
+          <button class="ui-nav-menu-trgr">
+            <i class="btn__seg ion ion-ios-plus-outline"></i><span class="btn__seg btn__seg--txt">transmission</span>
+          </button>
+          <ul class="ui-nav-menu-opts"><!--empty--></ul>
+        </div>
+
+        <!--type filter-->
+        <div class="rslt__fltr ui-nav-menu state--expanded">
+          <button class="ui-nav-menu-trgr">
+            <i class="btn__seg ion ion-ios-plus-outline"></i><span class="btn__seg btn__seg--txt">type</span>
+          </button>
+          <ul class="ui-nav-menu-opts"><!--empty--></ul>
+        </div>
+
+        <div class="rslt__fltr__acts">
+          <button class="btn__rds btn__prim btn-act--reset">
+            <i class="btn__seg ion ion-ios-refresh-empty"></i><span class="btn__seg btn__seg--txt">reset search</span>
+          </button>
+        </div>
+        
+      </div>
+    </nav>
+
+    <main class="app--core">
+      <header class="app--hdr">
+        <div class="hdr__inr">
+          <label for="search" class="hdr__srch">
+            <input type="text" class="srch__txt" name="search" placeholder="Search" />
+            <span class="srch__icn"><i class="ion-ios-search"></i></span>
+          </label>
+          <div class="hdr__acts">
+            <button class="btn__rd btn--fav-cnt">
+              <i class="btn__seg ion-android-favorite"></i>
+            </button>
+            <button class="btn__rd btn--usr-avtr"></button>
+          </div>
+        </div>
+      </header>
+      
+      <section class="rslt">
+        <nav class="rslt__view">
+          <p class="rslt__view__dtl">Showing <strong>476</strong> Results for "Porsche"</p>
+          <div class="rslt__view__acts">
+            <button class="btn__fl state--active" js-view-grid><i class="btn__seg ion ion-grid"></i></button>
+            <button class="btn__fl" js-view-rows><i class="btn__seg ion ion-navicon"></i></button>
+            <button class="btn__fl" js-view-map><i class="btn__seg ion ion-ios-location"></i></button>
+            
+            <label class="ui-dd">
+                <select name="result-sort" id="">
+                  <option value="relevant">Relevant</option>
+                  <option value="relevant">Recent</option>
+                </select>
+                <i class="ion ion-ios-arrow-down"></i>
+              </label>
+          </div>
+        </nav>
+        
+        
+        <ul class="rslt__feed">
+          
+          <li class="feed__itm" js-result-item><!--item 1-->
+            <div class="feed__itm__inr">
+              <div class="feed__itm__img" style="background-image: url('http://global.fncstatic.com/static/managed/img/Leisure/2009/porsche-spyder-876-fire.jpg')">
+                <span class="feed__itm__prc">$34,000</span>
+                <button class="btn__fl btn--fav" js-item-fav>
+                  <i class="btn__seg ion ion-android-favorite-outline"></i>
+                  <i class="btn__seg ion ion-android-favorite"></i>
+                </button>
+              </div>
+              <h5 class="feed__itm__ttl">2013 Porsche 911 Carrera S Cabriolet Only 2,500 Miles!</h
+                >
+              <p class="feed__itm__lbl lbl--1">by owner&nbsp;-&nbsp;<span>cars & trucks</span></p>
+            </div>
+          </li><!--@end feed item-->
+          
+          <li class="feed__itm feed__itm--fav" js-result-item><!--item 2-->
+            <div class="feed__itm__inr">
+              <div class="feed__itm__img" style="background-image: url('https://o.aolcdn.com/hss/storage/adam/e62b554e2f0f5edcbfb80f337a438c98/lead6-2015-porsche-918-spyder-fd.jpg')">
+                <span class="feed__itm__prc">$84,000</span>
+                <button class="btn__fl btn--fav" js-item-fav>
+                  <i class="btn__seg ion ion-android-favorite-outline"></i>
+                  <i class="btn__seg ion ion-android-favorite"></i>
+                </button>
+              </div>
+              <h5 class="feed__itm__ttl">2013 Porsche 911 Carrera S Cabriolet Only 2,500 Miles!</h5>
+              <p class="feed__itm__lbl lbl--2">by dealer&nbsp;-&nbsp;<span>cars & trucks</span></p>
+            </div>
+          </li><!--@end feed item-->
+          
+          <li class="feed__itm" js-result-item><!--item 3-->
+            <div class="feed__itm__inr">
+              <div class="feed__itm__img" style="background-image: url('http://airows.com/wp-content/uploads/2014/09/BN-EF721_mag091_J_20140822154547.jpg')">
+                <span class="feed__itm__prc">$224,000</span>
+                <button class="btn__fl btn--fav" js-item-fav>
+                  <i class="btn__seg ion ion-android-favorite-outline"></i>
+                  <i class="btn__seg ion ion-android-favorite"></i>
+                </button>
+              </div>
+              <h5 class="feed__itm__ttl">2013 Porsche 911 Carrera S Cabriolet Only 2,500 Miles!</h5>
+              <p class="feed__itm__lbl lbl--1">by owner&nbsp;-&nbsp;<span>cars & trucks</span></p>
+            </div>
+          </li><!--@end feed item-->
+          
+          <li class="feed__itm feed__itm--fav" js-result-item><!--item 4-->
+            <div class="feed__itm__inr">
+              <div class="feed__itm__img" style="background-image: url('https://o.aolcdn.com/hss/storage/adam/d5db356cb1fb0f3604cf89c6e6b49667/lead5-2015-porsche-macan-fd.jpg')">
+                <span class="feed__itm__prc">$54,000</span>
+                <button class="btn__fl btn--fav" js-item-fav>
+                  <i class="btn__seg ion ion-android-favorite-outline"></i>
+                  <i class="btn__seg ion ion-android-favorite"></i>
+                </button>
+              </div>
+              <h5 class="feed__itm__ttl">2013 Porsche 911 Carrera S Cabriolet Only 2,500 Miles!</h5>
+              <p class="feed__itm__lbl lbl--1">by owner&nbsp;-&nbsp;<span>cars & trucks</span></p>
+            </div>
+          </li><!--@end feed item-->
+          
+          <li class="feed__itm" js-result-item><!--item 5-->
+            <div class="feed__itm__inr">
+              <div class="feed__itm__img" style="background-image: url('http://businessdayghana.com/wp-content/uploads/2014/05/porch.jpg')">
+                <span class="feed__itm__prc">$24,000</span>
+                <button class="btn__fl btn--fav" js-item-fav>
+                  <i class="btn__seg ion ion-android-favorite-outline"></i>
+                  <i class="btn__seg ion ion-android-favorite"></i>
+                </button>
+              </div>
+              <h5 class="feed__itm__ttl">2013 Porsche 911 Carrera S Cabriolet Only 2,500 Miles!</h5>
+              <p class="feed__itm__lbl lbl--2">by dealer&nbsp;-&nbsp;<span>cars & trucks</span></p>
+            </div>
+          </li><!--@end feed item-->
+          
+          <li class="feed__itm feed__itm--fav" js-result-item><!--item 6-->
+            <div class="feed__itm__inr">
+              <div class="feed__itm__img" style="background-image: url('http://cnet2.cbsistatic.com/hub/i/r/2014/10/22/d80fd316-a0fd-45fc-9078-37c347630834/thumbnail/770x433/3afcfb2af573eb0306cabe0703df68ef/2015-porsche-macan-turbo-7340-001.jpg')">
+                <span class="feed__itm__prc">$114,000</span>
+                <button class="btn__fl btn--fav" js-item-fav>
+                  <i class="btn__seg ion ion-android-favorite-outline"></i>
+                  <i class="btn__seg ion ion-android-favorite"></i>
+                </button>
+              </div>
+              <h5 class="feed__itm__ttl">2013 Porsche 911 Carrera S Cabriolet Only 2,500 Miles!</h5>
+              <p class="feed__itm__lbl lbl--1">by owner&nbsp;-&nbsp;<span>cars & trucks</span></p>
+            </div>
+          </li><!--@end feed item-->
+          
+          <li class="feed__itm feed__itm--fav" js-result-item><!--item 7-->
+            <div class="feed__itm__inr">
+              <div class="feed__itm__img" style="background-image: url('https://o.aolcdn.com/hss/storage/adam/86e5b51dbd7e362f3aa7f7d02dc8184e/lead11-singer-reimagined-porsche-911.jpg')">
+                <span class="feed__itm__prc">$86,000</span>
+                <button class="btn__fl btn--fav" js-item-fav>
+                  <i class="btn__seg ion ion-android-favorite-outline"></i>
+                  <i class="btn__seg ion ion-android-favorite"></i>
+                </button>
+              </div>
+              <h5 class="feed__itm__ttl">2013 Porsche 911 Carrera S Cabriolet Only 2,500 Miles!</h5>
+              <p class="feed__itm__lbl lbl--1">by owner&nbsp;-&nbsp;<span>cars & trucks</span></p>
+            </div>
+          </li><!--@end feed item-->
+          
+          <li class="feed__itm" js-result-item><!--item 8-->
+            <div class="feed__itm__inr">
+              <div class="feed__itm__img" style="background-image: url('http://upload.wikimedia.org/wikipedia/commons/3/32/Porsche_912.jpg')">
+                <span class="feed__itm__prc">$126,000</span>
+                <button class="btn__fl btn--fav" js-item-fav>
+                  <i class="btn__seg ion ion-android-favorite-outline"></i>
+                  <i class="btn__seg ion ion-android-favorite"></i>
+                </button>
+              </div>
+              <h5 class="feed__itm__ttl">2013 Porsche 911 Carrera S Cabriolet Only 2,500 Miles!</h5>
+              <p class="feed__itm__lbl lbl--2">by dealer&nbsp;-&nbsp;<span>cars & trucks</span></p>
+            </div>
+          </li><!--@end feed item-->
+          
+          <li class="feed__itm" js-result-item><!--item 9-->
+            <div class="feed__itm__inr">
+              <div class="feed__itm__img" style="background-image: url('http://www.fluxauto.com/wp-content/uploads/2012/05/Baby-Porsche-Boxster-front-left-side-view.jpg')">
+                <span class="feed__itm__prc">$98,000</span>
+                <button class="btn__fl btn--fav" js-item-fav>
+                  <i class="btn__seg ion ion-android-favorite-outline"></i>
+                  <i class="btn__seg ion ion-android-favorite"></i>
+                </button>
+              </div>
+              <h5 class="feed__itm__ttl">2013 Porsche 911 Carrera S Cabriolet Only 2,500 Miles!</h5>
+              <p class="feed__itm__lbl lbl--1">by owner&nbsp;-&nbsp;<span>cars & trucks</span></p>
+            </div>
+          </li><!--@end feed item-->
+          
+        </ul><!--@end result feed-->
+        
+        <footer class="feed__pgr">
+          <button class="btn__rds pgr__itm pgr__str"><i class="btn__seg ion ion-ios-arrow-left"></i><i class="btn__seg ion ion-ios-arrow-left"></i></button>
+          <button class="btn__rds pgr__itm pgr__prev"><i class="btn__seg ion ion-ios-arrow-left"></i></button>
+          <button class="btn__rds pgr__itm"><span>1 - 9</span></button>
+          <button class="btn__rds pgr__itm"><span>10 - 19</span></button>
+          <button class="btn__rds pgr__itm"><span>20 - 29</span></button>
+          <button class="btn__rds pgr__itm state--selected"><span>30 - 39</span></button>
+          <button class="btn__rds pgr__itm"><span>40 - 49</span></button>
+          <button class="btn__rds pgr__itm"><span>50 - 59</span></button>
+          <button class="btn__rds pgr__itm"><span>60 - 69</span></button>
+          <button class="btn__rds pgr__itm pgr__next"><i class="btn__seg ion ion-ios-arrow-right"></i></button>
+          <button class="btn__rds pgr__itm pgr__end"><i class="btn__seg ion ion-ios-arrow-right"></i><i class="btn__seg ion ion-ios-arrow-right"></i></button>
+        </footer>
+        
+      </section>
+      
+    </main>
+
+    
+    
+  </body>
+</html>
