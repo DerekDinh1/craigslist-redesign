@@ -28,9 +28,9 @@ body {
   width: 66.6667%;
 }
 .grid-12 {
+  padding-bottom: 7px;	
   padding-left: 15px;	
   padding-right: 15px;
-  padding-bottom: 25px;	
   overflow: hidden;
   position: relative; 
   width: 100%;   
