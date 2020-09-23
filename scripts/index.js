@@ -8,8 +8,14 @@ $('.dropdown-button').dropdown({
     alignment: 'left', // Displays dropdown with edge aligned to the left of button
     stopPropagation: false // Stops event propagation
 });
+
 $(document).ready(function() {
     $('select').material_select();
+});
+
+// for loading page
+$(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow");
 });
 
 (function($){
