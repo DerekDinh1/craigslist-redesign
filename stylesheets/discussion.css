@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .sub-navbar {
-  display: flex;
-  justify-content: space-between;
   background-color: #fff;
-  color: 
+  display: flex;
+  position: relative;
 }
 
 .sub-navbar > div {
-  padding: 1%;
   flex: 3;
-  text-align: center;
+  padding: 1%;
   margin: 2%;
+  position: right;
+  text-align: center;
 }
 
 .active{
@@ -26,7 +26,8 @@
   height: 20%;
   padding:1%;
   background-color: #fff;
-  color: #000;
+  color: #6b3fa0;
+  cursor: pointer;
   margin: 0% 10%;
   text-align: center;
   box-shadow: 5px 5px 10px #888888;
@@ -86,9 +87,10 @@
 }
 
 .tags > div {
-  background-color: #6b3fa0;
+  background: #6b3fa0;
   border-radius: 10%;
   color: white;
+  cursor: pointer;
   margin-left: 1%;
   padding: 1% 3%;
 }

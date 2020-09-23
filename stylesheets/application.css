@@ -217,7 +217,7 @@ body {
     font-size: 100% !important;
 }
 
-.li-link:hover, li:hover {
+.li-link:hover, li:hover{
     color: white;
     background: #6b3fa0;
     cursor: pointer;
