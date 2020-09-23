@@ -5,6 +5,8 @@ html {
 
 body {
     background-image: url('../assets/IP1.png');
+    background-repeat: no-repeat;
+    background-size: 110% 200%;
     font-family: 'Times New Roman', sans-serif;
     height: 100vh;
     margin: 0;
@@ -18,12 +20,10 @@ body {
     bottom: 0;
     color: #6b3fa0;
     display: grid;
-    grid-template-columns: [col] auto;
-    grid-template-rows: [row] auto;
     height: 40px;
     left: 0;
     overflow: hidden;
-    padding: 25px 0;
+    padding: 25px 15px;
     position: relative;
     text-align: center;
     width: 100%;
@@ -59,12 +59,12 @@ body {
 }
 
 .wrapper {
-    margin: 0 40px;
+    color: #444;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: [col] auto [col] auto [col] auto [col] auto [col] auto;
     grid-template-rows: [row] auto [row] auto [row] auto [row] auto [row] auto [row] auto [row] auto;
-    color: #444;
+    margin: 0 40px;
 }
 
 /*Start of header section*/
@@ -79,8 +79,11 @@ body {
 }
 
 .profile-section {
-    width: 50%;
-    float: right;
+    cursor: pointer;
+    padding: 5%;
+    padding-bottom: 30px;
+    padding-left: 50%;
+    padding-top: 10px;
 }
 
 .search-section {
@@ -377,52 +380,3 @@ p>a:hover:before {
     border-bottom: 1px solid #eeeeee;
     font-size: 26px;
 }
-
-/* loader */
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    height:100%;
-  }
-  .loader-wrapper {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #242f3f;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .loader {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    border: 4px solid #Fff;
-    animation: loader 2s infinite ease;
-  }
-  .loader-inner {
-    vertical-align: top;
-    display: inline-block;
-    width: 100%;
-    background-color: #fff;
-    animation: loader-inner 2s infinite ease-in;
-  }
-  @keyframes loader {
-    0% { transform: rotate(0deg);}
-    25% { transform: rotate(180deg);}
-    50% { transform: rotate(180deg);}
-    75% { transform: rotate(360deg);}
-    100% { transform: rotate(360deg);}
-  }
-  @keyframes loader-inner {
-    0% { height: 0%;}
-    25% { height: 0%;}
-    50% { height: 100%;}
-    75% { height: 100%;}
-    100% { height: 0%;}
-  }

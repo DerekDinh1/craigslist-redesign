@@ -13,11 +13,6 @@ $(document).ready(function() {
     $('select').material_select();
 });
 
-// for loading page
-$(window).on("load",function(){
-    $(".loader-wrapper").fadeOut("slow");
-});
-
 (function($){
     $(document).on('ready', function(){
       
