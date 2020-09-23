@@ -4,7 +4,6 @@ body {
 
 /*footer*/
 .footer {
-    background: #eeeeee;
     color: #6b3fa0;
     display: grid;
     grid-template-columns: [col] auto;
