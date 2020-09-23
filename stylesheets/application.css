@@ -1,15 +1,27 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     font-family: 'Times New Roman', sans-serif;
 }
 
 /*footer*/
 .footer {
+    background: #eeeeee;
+    bottom: 0;
     color: #6b3fa0;
     display: grid;
     grid-template-columns: [col] auto;
     grid-template-rows: [row] auto;
-    padding: 40px 0;
+    height: 40px;
+    left: 0;
+    overflow: hidden;
+    padding: 25px 0;
+    position: relative;
     text-align: center;
+    width: 100%;
 }
 
 .footer span {
@@ -341,3 +353,25 @@ p>a:hover:before {
     margin-top: 10px;
 }
 
+/* about-section1 */
+.about-section1 {
+    color: black;
+    grid-column: col 3;
+    grid-row: row 3;
+    text-align: center;
+}
+
+.box-page1 {
+    border: 2px solid #eeeeeee0;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.box-page1 p {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #6b3fa0;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 26px;
+}
