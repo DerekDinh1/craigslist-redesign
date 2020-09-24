@@ -394,7 +394,7 @@ p>a:hover:before {
 
 /* bounce */
 .bounce {
-    background-image: url(https://i.imgur.com/KDkgwie.gif);
     background-position: center;
     background-repeat: repeat;
+    padding-left: 42%;
 }
