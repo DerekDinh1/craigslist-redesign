@@ -26,7 +26,6 @@ body {
     padding: 25px 15px;
     position: relative;
     text-align: center;
-    width: 100%;
 }
 
 .footer span {
@@ -73,6 +72,14 @@ body {
     grid-row: row 1;
 }
 
+.banner-section {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: row;
+    grid-row-end: 1;
+    padding-left: 11%;
+}
+
 .location-section {
     grid-column: col 5;
     grid-row: row 2;
@@ -104,6 +111,10 @@ body {
     grid-column: col;
     grid-row: row 4;
     text-align: center;
+}
+
+.ad-image {
+    bottom: 0;
 }
 
 .calendar-section {
@@ -379,4 +390,11 @@ p>a:hover:before {
     color: #6b3fa0;
     border-bottom: 1px solid #eeeeee;
     font-size: 26px;
+}
+
+/* bounce */
+.bounce {
+    background-image: url(https://i.imgur.com/KDkgwie.gif);
+    background-position: center;
+    background-repeat: repeat;
 }
